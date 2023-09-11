@@ -1,44 +1,15 @@
-package Type1;
+package Type3;
 
 public class Pattern_6 {
-    public static void main(String[] args)
-    {
-        int num, i, j;
-        for (i = 1; i <= 4; i++)
+    public static void main(String[] args) {
+        int i=0,j=0,num=5;
+        for(i=1;i<=5;i++)
         {
-            if (i % 2 == 1)                     /*when i is odd*/
+            for(j=1;j<=num;j++)
             {
-                for (j = 1; j <= 5; j++)
-                {
-                    if(j%2==0)                  //when j is even
-                    {
-                        num=0;
-                        System.out.print(num + " ");
-                    }
-                    else                     // when j is odd
-                    {
-                        num=1;
-                        System.out.print(num + " ");
-                    }
-                }
+                System.out.print(j+" ");
             }
-            else                               /* This else is when i is even*/
-            {
-                for (j = 1; j <= 5; j++)
-                {
-                    if(j%2==0)                 // when j is even
-                    {
-                        num=1;
-                        System.out.print(num + " ");
-                    }
-                    else                        // when j is odd
-                    {
-                        num=0;
-                        System.out.print(num + " ");
-                    }
-
-                }
-            }
+            --num;
             System.out.println();
         }
     }

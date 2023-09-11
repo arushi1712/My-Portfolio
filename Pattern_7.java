@@ -1,31 +1,16 @@
-package Type1;
+package Type3;
 
-public class Pattern_7
-{
-    public static void main(String[] args)
-    {
-        int i, j;
-        char ch;
-        for (i = 1; i <= 5; i++)
+public class Pattern_7 {
+    public static void main(String[] args) {
+        int i=0,j=0,num=5;
+        for(i=1;i<=5;i++)
         {
-            for (j = 1; j <= 5; j++)
-                {
-                    if(j%2==0)                  //when j is even
-                    {
-                        ch='+';
-                        System.out.print(ch + " ");
-                    }
-                    else                     // when j is odd
-                    {
-                        ch='*';
-                        System.out.print(ch + " ");
-                    }
-                }
-            System.out.println();
+            for(j=1;j<=num;j++)
+            {
+                System.out.print(i+" ");
             }
-
+            --num;
+            System.out.println();
         }
     }
-
-
-
+}

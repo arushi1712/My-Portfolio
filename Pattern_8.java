@@ -1,18 +1,15 @@
-package Type1;
+package Type3;
 
-public class Pattern_8
-{
-    public static void main(String[] args)
-    {
-        int num,i,j,k;
+public class Pattern_8 {
+    public static void main(String[] args) {
+        int i=0,j=0,num=5; char ch='a';
         for(i=1;i<=5;i++)
         {
-            num=5;
-            for(j=1;j<=5;j++)
+            for(j=1;j<=num;j++)
             {
-                System.out.print(num+" ");
-                num+=5;
+                System.out.print(ch+" ");
             }
+            ch++; num--;
             System.out.println();
         }
     }

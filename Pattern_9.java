@@ -1,32 +1,18 @@
-package Type1;
+package Type3;
 
 public class Pattern_9
 {
-    public static void main(String[] args)
-    {
-        int num,i,j;
+    public static void main(String[] args) {
+        int i=0,j=0,num=5; char ch='a', temp=ch;
         for(i=1;i<=5;i++)
         {
-            if(i%2==0)                                      // when i is even
+            for(j=1;j<=num;j++)
             {
-                num=2;
-                for(j=1;j<=5;j++)
-                {
-                    System.out.print(num+" ");
-                    num+=2;
-                }
-                System.out.println();
+                System.out.print(ch+" ");
+                ch++;
             }
-            else                                                // when is odd
-            {
-                num=5;
-                for(j=1;j<=5;j++)
-                {
-                    System.out.print(num + " ");
-                    num+=5;
-                }
-                System.out.println();
-            }
+            ch=temp; num--;
+            System.out.println();
         }
     }
 }

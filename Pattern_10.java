@@ -1,22 +1,18 @@
 package Type3;
 
-public class Pattern_4 {
+public class Pattern_10
+{
     public static void main(String[] args) {
-        int i=0,j=0,k=0,space=0; char ch;
+        int i=0,j=0, num=5; char ch='a';
         for(i=1;i<=5;i++)
         {
-            ch='A';
-            space=5-i;
-            for(j=space;j>=1;j--)
-            {
-                System.out.print("  ");
-            }
-            for(k=1;k<=i;k++)
+            for(j=1;j<=num;j++)
             {
                 System.out.print(ch+" ");
                 ch++;
             }
             System.out.println();
+            num--;
         }
     }
 }

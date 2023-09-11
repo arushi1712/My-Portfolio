@@ -1,29 +1,17 @@
-package Type1;
+package Type3;
 
 public class Pattern_5 {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
+        int i=0,j=0,k=0,space=0;
         char ch;
-        int i,j;
         for(i=1;i<=5;i++)
         {
-            if(i==2 || i==4)
+            ch='A';
+            space=5-i;
+            for(j=space;j>=1;j--)
             {
-                ch='b';
-                for(j=1;j<=5;j++)
-                {
-                    System.out.print(ch + " ");
-                }
+                System.out.println("hi");
             }
-            else
-            {
-                ch='a';
-                for(j=1;j<=5;j++)
-                {
-                    System.out.print(ch + " ");
-                }
-            }
-            System.out.println();
         }
     }
 }
